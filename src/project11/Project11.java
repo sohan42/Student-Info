@@ -4,7 +4,6 @@ import javax.swing.JFrame;
 
 class MyFrame extends JFrame{
     void load(){
-       
        setSize(400,300); //size of Jframe
        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Exits while clicking 'X' button
        setLocationRelativeTo(null);

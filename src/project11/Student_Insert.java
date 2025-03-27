@@ -1,5 +1,6 @@
 package project11;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -29,12 +30,17 @@ public class Student_Insert extends JFrame{
     }
     
     void components(){
+        Color bg = new Color(7, 74, 102);
+        Color fg = new Color(230, 231, 240);
+        
         jp = new JPanel();
+        jp.setBackground(bg);
         jp.setSize(400,500);
         jp.setLayout(null);       
         add(jp);
         
         lRo = new JLabel("Roll no: ");
+        lRo.setForeground(fg);
         lRo.setBounds(10,10,100, 20);
         jp.add(lRo);
         
@@ -43,6 +49,7 @@ public class Student_Insert extends JFrame{
         jp.add(tRo);
         
         lNa = new JLabel("Name: ");
+        lNa.setForeground(fg);
         lNa.setBounds(10,60,100, 20);
         jp.add(lNa);
         
@@ -51,6 +58,7 @@ public class Student_Insert extends JFrame{
         jp.add(tNa);
          
         lAd = new JLabel("Address: ");
+        lAd.setForeground(fg);
         lAd.setBounds(10,110,100, 20);
         jp.add(lAd);
         
@@ -59,6 +67,7 @@ public class Student_Insert extends JFrame{
         jp.add(tAd);
         
         lGe = new JLabel("Gender: ");
+        lGe.setForeground(fg);
         lGe.setBounds(10,160,100, 20);
         jp.add(lGe);
         
@@ -68,6 +77,7 @@ public class Student_Insert extends JFrame{
         jp.add(cGe);
         
         lPh = new JLabel("Phone no: ");
+        lPh.setForeground(fg);
         lPh.setBounds(10,210,100, 20);
         jp.add(lPh);
         
@@ -76,6 +86,7 @@ public class Student_Insert extends JFrame{
         jp.add(tPh);
         
         lEm = new JLabel("Email: ");
+        lEm.setForeground(fg);
         lEm.setBounds(10,260,100, 20);
         jp.add(lEm);
         

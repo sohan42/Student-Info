@@ -1,5 +1,6 @@
 package project11;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,17 +27,21 @@ public class Components {
         this.m = m;
         jp = new JPanel();
         jp.setSize(400, 300);
-        //jp.setBackground(Color.gray);
+        Color bg = new Color(7, 74, 102);
+        Color fg = new Color(230, 231, 240);
+        jp.setBackground(bg);
         jp.setLayout(null);
         m.add(jp);
         
         un = new JLabel("User Name: ");
         un.setFont(new Font("Calibri",3,16)); // (Font-Name, style, font-size)
+        un.setForeground(fg);
         un.setBounds(20, 60, 100, 20); // (x-axis,y-axis,width,height)
         jp.add(un);
         
         up = new JLabel("Password: ");
         up.setFont(new Font("Calibri",3,16)); // (Font-Name, style, font-size)
+        up.setForeground(fg);
         up.setBounds(20, 120, 100, 20); // (x-axis,y-axis,width,height)
         jp.add(up);
         

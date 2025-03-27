@@ -20,9 +20,7 @@ public class Database {
         try{
         Connection c = DriverManager.getConnection(DB_URL,user,password);
         //System.out.println("Connecting...");
-        return c;
-       
-        }
+        return c;        }
         
         catch(Exception ex){
             JOptionPane.showMessageDialog(null,ex);

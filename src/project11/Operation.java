@@ -1,5 +1,6 @@
 package project11;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -23,12 +24,17 @@ public class Operation extends JFrame{
     }
     
     void init(){
+        Color bg = new Color(7, 74, 102);
+        Color fg = new Color(230, 231, 240);
+        
         JPanel p = new JPanel();
         p.setSize(400,600);
+        p.setBackground(bg);
         p.setLayout(null);       
         add(p);
         
         JLabel s = new JLabel("Search by Id:");
+        s.setForeground(fg);
         s.setBounds(20,30,80,20);
         p.add(s);
         
@@ -41,6 +47,7 @@ public class Operation extends JFrame{
         p.add(sBtn);
         
         JLabel lRoll = new JLabel("Roll no:");
+        lRoll.setForeground(fg);
         lRoll.setBounds(20,70,100,20);
         p.add(lRoll);
         
@@ -49,6 +56,7 @@ public class Operation extends JFrame{
         p.add(tRoll);
         
         JLabel lName = new JLabel("Name:");
+        lName.setForeground(fg);
         lName.setBounds(20,140,100,20);
         p.add(lName);
         
@@ -57,6 +65,7 @@ public class Operation extends JFrame{
         p.add(tName);
         
         JLabel lAddress = new JLabel("Address:");
+        lAddress.setForeground(fg);
         lAddress.setBounds(20,210,100,20);
         p.add(lAddress);
         
@@ -65,6 +74,7 @@ public class Operation extends JFrame{
         p.add(tAddress);
         
         JLabel lGender = new JLabel("Gender:");
+        lGender.setForeground(fg);
         lGender.setBounds(20,280,100,20);
         p.add(lGender);
         
@@ -74,6 +84,7 @@ public class Operation extends JFrame{
         p.add(cGender);
         
         JLabel lPhone = new JLabel("Phone:");
+        lPhone.setForeground(fg);
         lPhone.setBounds(20,350,100,20);
         p.add(lPhone);
         
@@ -82,6 +93,7 @@ public class Operation extends JFrame{
         p.add(tPhone);
         
         JLabel lEmail = new JLabel("Email:");
+        lEmail.setForeground(fg);
         lEmail.setBounds(20,420,100,20);
         p.add(lEmail);
         
