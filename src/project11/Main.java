@@ -12,8 +12,7 @@ class MyFrame extends JFrame{
    
 }
 
-public class Project11 {
-
+public class Main {
     public static void main(String[] args) {
        MyFrame m = new MyFrame(); //Instance of MyFrame class
        m.load();
